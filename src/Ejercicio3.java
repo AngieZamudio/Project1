@@ -6,13 +6,7 @@ public class Ejercicio3 {
         persona.setNombre("Falso McPato");
         persona.setTelefono("44345564234234");
 
-        int edad = persona.getEdad();
-        String telefono = persona.getTelefono();
-        String nombre = persona.getNombre();
-
-        System.out.println("La persona se llama "+ nombre);
-        System.out.println("Tiene "+ edad + " años");
-        System.out.println("Su número de telefono es "+ telefono);
+        persona.mostrarDatos();
 
     }
 }
@@ -44,5 +38,11 @@ class Persona{
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+    public void mostrarDatos(){
+        System.out.println("");
+        System.out.println("Nombre: "+ this.nombre );
+        System.out.println("Edad: "+ this.edad + " años");
+        System.out.println("Telefono: "+ this.telefono);
     }
 }
